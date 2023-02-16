@@ -1,0 +1,158 @@
+"codebook","name","category","num"
+"101","Blindness ","Eye",101
+"102"," Cataracts ","Eye",102
+"103"," Glaucoma ","Eye",103
+"104"," Keratoconjunctivitis sicca (KCS) ","Eye",104
+"107"," Third eyelid prolapse (cherry eye) ","Eye",107
+"108"," Conjunctivitis ","Eye",108
+"109"," Corneal ulcer ","Eye",109
+"112"," Entropion (eyelid rolled in) ","Eye",112
+"115"," Juvenile cataracts ","Eye",115
+"116"," Nuclear sclerosis ","Eye",116
+"118"," Progressive retinal atrophy ","Eye",118
+"120"," Uveitis ","Eye",120
+"198"," Other eye condition ","Eye",198
+"201"," Deafness ","Ear/Nose/Throat",201
+"202"," Ear Infection ","Ear/Nose/Throat",202
+"203"," Ear Mites ","Ear/Nose/Throat",203
+"205"," Hearing loss (incompletely deaf) ","Ear/Nose/Throat",205
+"206"," Hematoma ","Ear/Nose/Throat",206
+"208"," Rhinitis ","Ear/Nose/Throat",208
+"298"," Other ear condition ","Ear/Nose/Throat",298
+"304"," Dental calculus (yellow build-up on teeth) ","Mouth/Dental/Oral",304
+"305"," Extracted teeth ","Mouth/Dental/Oral",305
+"306"," Fractured teeth ","Mouth/Dental/Oral",306
+"307"," Gingivitis (red, puffy gums) ","Mouth/Dental/Oral",307
+"310"," Overbite ","Mouth/Dental/Oral",310
+"311"," Retained deciduous (baby) teeth ","Mouth/Dental/Oral",311
+"313"," Underbite ","Mouth/Dental/Oral",313
+"398"," Other oral condition ","Mouth/Dental/Oral",398
+"403"," Umbilical hernia (Skin) ","Skin",403
+"404"," Alopecia (hair loss) ","Skin",404
+"405"," Atopic dermatitis (atopy) ","Skin",405
+"406"," Chronic or recurrent hot spots ","Skin",406
+"407"," Chronic or recurrent skin infections ","Skin",407
+"408"," Contact dermatitis ","Skin",408
+"410"," Flea allergy dermatitis ","Skin",410
+"411"," Fleas ","Skin",411
+"412"," Food or medicine allergies that affect the skin ","Skin",412
+"414"," Lick granuloma ","Skin",414
+"415"," Non-specific dermatosis ","Skin",415
+"423"," Pruritis (itchy skin) ","Skin",423
+"424"," Pyoderma or bacterial dermatitis ","Skin",424
+"425"," Sarcoptic mange ","Skin",425
+"426"," Seasonal allergies ","Skin",426
+"428"," Sebaceous cysts ","Skin",428
+"429"," Seborrhea or seborrheic dermatitis (greasy skin) ","Skin",429
+"430"," Systemic demodectic mange ","Skin",430
+"432"," Ticks ","Skin",432
+"498"," Other skin condition ","Skin",498
+"504"," Murmur ","Cardiac",504
+"510"," Arrhythmia ","Cardiac",510
+"511"," Cardiomyopathy ","Cardiac",511
+"512"," Congestive heart failure ","Cardiac",512
+"514"," Hypertension (high blood pressure) ","Cardiac",514
+"519"," Valve disease ","Cardiac",519
+"598"," Other Cardiac ","Cardiac",598
+"602"," Tracheal stenosis (narrowing) ","Respiratory",602
+"604"," Chronic or recurrent bronchitis ","Respiratory",604
+"605"," Chronic or recurrent cough ","Respiratory",605
+"608"," Laryngeal paralysis (Respiratory) ","Respiratory",608
+"610"," Pneumonia ","Respiratory",610
+"612"," Tracheal collapse ","Respiratory",612
+"698"," Other respiratory condition ","Respiratory",698
+"704"," Umbilical hernia (Gastrointestinal) ","Gastrointestinal",704
+"705"," Anal sac impaction ","Gastrointestinal",705
+"706"," Bilious vomiting syndrome ","Gastrointestinal",706
+"707"," Bloat with torsion (GDV) ","Gastrointestinal",707
+"708"," Chronic or recurrent diarrhea ","Gastrointestinal",708
+"709"," Chronic or recurrent vomiting ","Gastrointestinal",709
+"710"," Constipation ","Gastrointestinal",710
+"711"," Fecal incontinence ","Gastrointestinal",711
+"712"," Food or medicine allergies ","Gastrointestinal",712
+"713"," Foreign body ingestion or blockage ","Gastrointestinal",713
+"714"," Hemorrhagic gastroenteritis (HGE) or stress colitis (acute) ","Gastrointestinal",714
+"719"," Other allergies ","Gastrointestinal",719
+"798"," Other gastrointestinal condition ","Gastrointestinal",798
+"803"," Chronic inflammatory liver disease ","Liver/Pancreas",803
+"809"," Pancreatitis ","Liver/Pancreas",809
+"898"," Other liver condition ","Liver/Pancreas",898
+"906"," Acute kidney failure ","Kidney/Urinary",906
+"908"," Chronic kidney disease ","Kidney/Urinary",908
+"911"," Proteinuria ","Kidney/Urinary",911
+"914"," Urinary crystals or stones in bladder or urethra ","Kidney/Urinary",914
+"915"," Urinary incontinence ","Kidney/Urinary",915
+"916"," Urinary tract infection (chronic or recurrent) ","Kidney/Urinary",916
+"998"," Other kidney condition ","Kidney/Urinary",998
+"1001"," Cryptorchid ","Reproductive",1001
+"1015"," Recessed vulva ","Reproductive",1015
+"1017"," Vaginitis ","Reproductive",1017
+"1098"," Other reproductive condition ","Reproductive",1098
+"1105"," Cruciate ligament rupture ","Bone/Orthopedic",1105
+"1106"," Degenerative joint disease ","Bone/Orthopedic",1106
+"1108"," Elbow dysplasia ","Bone/Orthopedic",1108
+"1110"," Hip dysplasia ","Bone/Orthopedic",1110
+"1111"," Intervertebral disc disease (IVDD) (Orthopedic) ","Bone/Orthopedic",1111
+"1112"," Lameness (chronic or recurrent) ","Bone/Orthopedic",1112
+"1113"," Osteoarthritis ","Bone/Orthopedic",1113
+"1117"," Patellar luxation ","Bone/Orthopedic",1117
+"1118"," Rheumatoid arthritis ","Bone/Orthopedic",1118
+"1119"," Spondylosis ","Bone/Orthopedic",1119
+"1198"," Other orthopedic condition ","Bone/Orthopedic",1198
+"1205"," Dementia or senility ","Brain/Neurologic",1205
+"1210"," Intervertebral disc disease (IVDD) (Neurologic) ","Brain/Neurologic",1210
+"1211"," Laryngeal paralysis (Neurologic) ","Brain/Neurologic",1211
+"1215"," Seizures (including epilepsy) ","Brain/Neurologic",1215
+"1216"," Vestibular disease ","Brain/Neurologic",1216
+"1298"," Other neurologic condition ","Brain/Neurologic",1298
+"1304"," Addison's disease (hypoadrenocorticism; low adrenal function) ","Endocrine",1304
+"1305"," Cushing's disease (hyperadrenocorticism; excess adrenal function) ","Endocrine",1305
+"1307"," Diabetes mellitus (common diabetes which causes high blood sugar) ","Endocrine",1307
+"1312"," Hypothyroidism (low thyroid function) ","Endocrine",1312
+"1407"," Anemia ","Hematopoietic",1407
+"1598"," Other congenital disorder ","Other congenital disorder",1598
+"1601"," Anaplasmosis ","Infection/Parasites",1601
+"1605"," Bordetella and/or parainfluenza (\\kennel cough\\)\\\\ ","Infection/Parasites",1605
+"1609"," Coccidia ","Infection/Parasites",1609
+"1612"," Dermatophytosis (\\ringworm\\)\\\\ ","Infection/Parasites",1612
+"1614"," Ehrlichiosis ","Infection/Parasites",1614
+"1615"," Fever of unknown origin ","Infection/Parasites",1615
+"1616"," Gastrointestinal parasites ","Infection/Parasites",1616
+"1617"," Giardia ","Infection/Parasites",1617
+"1619"," Heartworm infection ","Infection/Parasites",1619
+"1622"," Hookworms ","Infection/Parasites",1622
+"1627"," Lyme disease ","Infection/Parasites",1627
+"1630"," Parvovirus ","Infection/Parasites",1630
+"1634"," Roundworms ","Infection/Parasites",1634
+"1637"," Tapeworms ","Infection/Parasites",1637
+"1640"," Whipworms ","Infection/Parasites",1640
+"1698"," Other infectious disease ","Infection/Parasites",1698
+"1701"," Chocolate ","Toxin Consumption",1701
+"1703"," Grapes or raisins ","Toxin Consumption",1703
+"1704"," Ingestion of human medications ","Toxin Consumption",1704
+"1705"," Ingestion of recreational drugs ","Toxin Consumption",1705
+"1708"," Mouse or rat bait/poison (Warfarin) ","Toxin Consumption",1708
+"1709"," Mouse or rat bait/poison (Other/Unknown) ","Toxin Consumption",1709
+"1710"," Overdose of medications prescribed to the dog ","Toxin Consumption",1710
+"1798"," Other ToxinConsumption ","Toxin Consumption",1798
+"1801"," Dog bite ","Trauma",1801
+"1802"," Bite wound from another animal ","Trauma",1802
+"1803"," Fall from height ","Trauma",1803
+"1804"," Fractured bone (long bone in limb) ","Trauma",1804
+"1805"," Fractured bone (other bone in limb) ","Trauma",1805
+"1809"," Head trauma due to any cause ","Trauma",1809
+"1810"," Hit by car or other vehicle ","Trauma",1810
+"1811"," Kicked by horse or other large animal ","Trauma",1811
+"1812"," Laceration ","Trauma",1812
+"1813"," Penetrating wound (such as a stick) ","Trauma",1813
+"1815"," Snakebite ","Trauma",1815
+"1816"," Tail injury ","Trauma",1816
+"1817"," Torn or broken toenail ","Trauma",1817
+"1898"," Other trauma ","Trauma",1898
+"1998"," Other Immune","Immune-mediated",1998
+"hs_cancer_types_lipoma","Lipoma","Cancer",2018
+"hs_cancer_types_mast_cell_tumor","Mast cell tumor","Cancer",2020
+"hs_cancer_types_melanoma","Melanoma","Cancer",2021
+"hs_cancer_types_other","Other","Cancer",2098
+"hs_cancer_types_soft_tissue_sarcoma","Soft tissue sarcoma","Cancer",2031
+"hs_cancer_types_unknown","Unknown","Cancer",2099
