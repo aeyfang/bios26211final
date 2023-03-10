@@ -1,0 +1,72 @@
+---
+title: "DAP_data_directional"
+author: "Antoinette Fang"
+date: "2023-02-26"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(stringr)
+library(fastDummies)
+library(miceadds)
+library(tidyverse)
+library('future.apply')
+library(readxl)
+```
+
+```{r}
+date<-read.csv(file = "/Users/fanga/BIOS26211/DATA/2021 DATA/health.conditions.dates.csv",header = T)
+co<-read_excel("/Users/fanga/BIOS26211/DATA/2021 DATA/bh_01_2021.xlsx",sheet = "Edges")
+id<-read.csv(file = "/Users/fanga/BIOS26211/DATA/2021 DATA/predict_var_2021.csv", sep = ",", header = T)
+dog_id<-id[,1]
+dis<-read.csv(file = "/Users/fanga/BIOS26211/DATA/2021 DATA/response_var_2021.csv", sep = ",", header = T)
+dis<-cbind(dog_id,dis)
+prob<-read.csv(file = "/Users/fanga/BIOS26211/DATA/2021 DATA/2021_perprob.csv", header = T)
+prob<-cbind(dog_id,prob)
+```
+
+```{r}
+t<-as.numeric(co[1,])
+dis1<-paste("X",t[1],sep = "")
+dis2<-paste("X",t[2],sep = "")
+mat<-dis %>% select(dog_id,all_of(dis1),all_of(dis2)) %>% #gives matrix of dogs that have the two diseases of interest
+ filter_if(., is.numeric, all_vars((.) != 0))
+p<-prob %>% filter(dog_id %in% mat[,1]) %>% #filters for personalized probabilities of dogs that have two diseases of interest
+  select(dog_id,all_of(dis1),all_of(dis2)) %>%
+  mutate(t1_to_t2 = .[,2]/(.[,2]+.[,3])) %>% #finds probability that disease 1 occurs before disease 2
+  mutate(t2_to_t1 = .[,3]/(.[,2]+.[,3]))
+
+exp1_to2<-sum(p$t1_to_t2) #expected number of dogs with disease 1 before disease 2
+exp2_to1<-sum(p$t2_to_t1) #expected number of dogs with disease 2 before disease 1
+var<-sum(p$t1_to_t2*(1-p$t1_to_t2)) #variance
+
+time<-date %>% filter(dog_id %in% mat[,1]) %>% #filters out the diagnosis date table for just the dogs with diseases of interest
+  filter(hs_condition %in% t)
+
+#counts the actual number of dogs for each direction
+count_1to2<-0
+count_2to1<-0
+for (i in 1:nrow(p)){
+  t1<-time %>% filter(dog_id %in% p[i,1]) %>% 
+    filter(hs_condition %in% t[1]) %>% 
+    filter(months_from_present==max(months_from_present)) %>%
+    filter(duplicated(months_from_present) == FALSE)
+  t2<-time %>% filter(dog_id %in% p[i,1]) %>% 
+    filter(hs_condition %in% t[2]) %>% 
+    filter(months_from_present==max(months_from_present)) %>%
+    filter(duplicated(months_from_present) == FALSE)
+  if (t1$months_from_present > t2$months_from_present){
+    count_1to2 <- count_1to2 + 1
+  } else{
+    count_2to1 <- count_2to1 + 1
+  }
+}
+
+finalexp<-max(exp1_to2,exp2_to1) #choose the greater expected value
+finalcount<-max(count_1to2,count_2to1) #choose the greater actual count
+
+pval<-1-pnorm(finalcount, mean = finalexp, sd = sqrt(var)) #finds the p value
+
+```
+
